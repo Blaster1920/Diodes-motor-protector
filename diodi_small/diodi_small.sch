@@ -52,7 +52,7 @@ F 1 "CONN_01X04" H 2669 1916 50  0000 C CNN
 F 2 "Connectors_JST:JST_XH_B04B-XH-A_04x2.50mm_Straight" H 2750 2200 50  0001 C CNN
 F 3 "" H 2750 2200 50  0001 C CNN
 	1    2750 2200
-	-1   0    0    1   
+	-1   0    0    -1  
 $EndComp
 $Comp
 L CONN_01X04 J2
@@ -63,7 +63,7 @@ F 1 "CONN_01X04" H 4528 2150 50  0000 L CNN
 F 2 "Connectors_JST:JST_XH_B04B-XH-A_04x2.50mm_Straight" H 4450 2200 50  0001 C CNN
 F 3 "" H 4450 2200 50  0001 C CNN
 	1    4450 2200
-	1    0    0    -1  
+	1    0    0    1   
 $EndComp
 $Comp
 L D D1
@@ -120,17 +120,15 @@ Wire Wire Line
 Wire Wire Line
 	3050 2050 2950 2050
 Wire Wire Line
-	3100 1800 3050 1800
-Connection ~ 3050 1900
+	2950 1800 3100 1800
 Wire Wire Line
-	3850 1800 4200 1800
+	3850 1800 4250 1800
 Wire Wire Line
 	4200 1800 4200 2050
 Wire Wire Line
 	4200 1900 4150 1900
 Wire Wire Line
 	4200 2050 4250 2050
-Connection ~ 4200 1900
 $Comp
 L D D7
 U 1 1 5AA1E5DB
@@ -186,19 +184,33 @@ Wire Wire Line
 Wire Wire Line
 	3050 2350 2950 2350
 Wire Wire Line
-	3100 2600 3050 2600
-Connection ~ 3050 2500
+	2950 2600 3100 2600
 Wire Wire Line
-	3850 2600 4200 2600
+	3850 2600 4250 2600
 Wire Wire Line
 	4200 2600 4200 2350
 Wire Wire Line
 	4200 2500 4150 2500
 Wire Wire Line
 	4200 2350 4250 2350
-Connection ~ 4200 2500
 Wire Wire Line
 	4250 2150 2950 2150
 Wire Wire Line
 	2950 2250 4250 2250
+Connection ~ 3050 1900
+Connection ~ 4200 1900
+Connection ~ 4200 2500
+Connection ~ 3050 2500
+Wire Wire Line
+	2950 2050 2950 1800
+Connection ~ 3050 1800
+Wire Wire Line
+	4250 2050 4250 1800
+Connection ~ 4200 1800
+Wire Wire Line
+	2950 2350 2950 2600
+Connection ~ 3050 2600
+Wire Wire Line
+	4250 2350 4250 2600
+Connection ~ 4200 2600
 $EndSCHEMATC
