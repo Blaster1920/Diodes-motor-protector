@@ -213,4 +213,10 @@ Connection ~ 3050 2600
 Wire Wire Line
 	4250 2350 4250 2600
 Connection ~ 4200 2600
+Text Notes 7350 7500 0    60   ~ 0
+Stepper_motor_lifeguard_V2
+Text Notes 7100 6750 0    60   ~ 0
+CERN OSH License 1.2
+Text Notes 7100 6900 0    60   ~ 0
+All credits to Addictivers.cc
 $EndSCHEMATC
